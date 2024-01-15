@@ -1,0 +1,31 @@
+2024-01-11 15:48:25.414322: ServerS ACTIVATED
+Training: I execute 10 global epochs Early stopping patience = 10 epochs
+Training params: HP_Training_Server(build_model_fn=functools.partial(<function create_net at 0x000002E576646560>, input=39, hidden_1=256, hidden_2=256, dropout=0.1, output=2), epochs=10, patience=10, sample_size=1.0, aggregation_fn=functools.partial(<function aggregate_nn_weighted at 0x000002E5766460E0>), init_model_fn=functools.partial(<function init_model_nn at 0x000002E576645FC0>), extract_model_fn=functools.partial(<function extract_model_nn at 0x000002E576645F30>), epoch2ckpt=10, from_check=False, starting_model_path='')
+Children list : ['Client_C0', 'Client_C1', 'Client_C2', 'Client_C3']
+2024-01-11 15:48:52.740129: Epoch 0: TRAIN = accuracy : 0.445	precision : 0.2847	recall : 0.445	f1 : 0.334	loss : 0.7021		VAL = accuracy : 0.4451	precision : 0.2848	recall : 0.4451	f1 : 0.3341	loss : 0.7021	
+2024-01-11 15:48:52.742130: Epoch 1: CHECKPOINT: Better Model Found
+2024-01-11 15:51:04.721597: Epoch 1: TRAIN = accuracy : 0.7279	precision : 0.8861	recall : 0.7279	f1 : 0.7451	loss : 0.6246		VAL = accuracy : 0.7288	precision : 0.8867	recall : 0.7288	f1 : 0.7461	loss : 0.6243	
+2024-01-11 15:51:04.722598: Epoch 1: CHECKPOINT: Better Model Found
+2024-01-11 15:51:04.724600: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 15:53:30.934848: Epoch 2: TRAIN = accuracy : 0.7946	precision : 0.8182	recall : 0.7946	f1 : 0.8039	loss : 0.4993		VAL = accuracy : 0.7958	precision : 0.819	recall : 0.7958	f1 : 0.805	loss : 0.4976	
+2024-01-11 15:53:30.935848: Epoch 2: CHECKPOINT: Better Model Found
+2024-01-11 15:55:43.831506: Epoch 3: TRAIN = accuracy : 0.5459	precision : 0.8687	recall : 0.5459	f1 : 0.5187	loss : 1.0923		VAL = accuracy : 0.5464	precision : 0.869	recall : 0.5464	f1 : 0.5196	loss : 1.0902	
+2024-01-11 15:57:58.013927: Epoch 4: TRAIN = accuracy : 0.5459	precision : 0.8687	recall : 0.5459	f1 : 0.5187	loss : 1.0923		VAL = accuracy : 0.5464	precision : 0.869	recall : 0.5464	f1 : 0.5196	loss : 1.0902	
+2024-01-11 16:00:13.126160: Epoch 5: TRAIN = accuracy : 0.5459	precision : 0.8687	recall : 0.5459	f1 : 0.5187	loss : 1.0924		VAL = accuracy : 0.5464	precision : 0.869	recall : 0.5464	f1 : 0.5196	loss : 1.0903	
+2024-01-11 16:02:25.991293: Epoch 6: TRAIN = accuracy : 0.4887	precision : 0.8548	recall : 0.4887	f1 : 0.4217	loss : 1.614		VAL = accuracy : 0.4893	precision : 0.8552	recall : 0.4893	f1 : 0.4229	loss : 1.6107	
+2024-01-11 16:04:39.074144: Epoch 7: TRAIN = accuracy : 0.4887	precision : 0.8548	recall : 0.4887	f1 : 0.4217	loss : 1.6139		VAL = accuracy : 0.4893	precision : 0.8552	recall : 0.4893	f1 : 0.4229	loss : 1.6109	
+2024-01-11 16:06:53.317799: Epoch 8: TRAIN = accuracy : 0.4887	precision : 0.8548	recall : 0.4887	f1 : 0.4217	loss : 1.614		VAL = accuracy : 0.4893	precision : 0.8552	recall : 0.4893	f1 : 0.4229	loss : 1.6119	
+2024-01-11 16:09:16.385233: Epoch 9: TRAIN = accuracy : 0.6802	precision : 0.886	recall : 0.6802	f1 : 0.6983	loss : 1.0248		VAL = accuracy : 0.6801	precision : 0.8861	recall : 0.6801	f1 : 0.6982	loss : 1.0233	
+2024-01-11 16:11:52.759632: Epoch 10: TRAIN = accuracy : 0.6802	precision : 0.886	recall : 0.6802	f1 : 0.6983	loss : 1.0248		VAL = accuracy : 0.6801	precision : 0.8861	recall : 0.6801	f1 : 0.6982	loss : 1.0247	
+2024-01-11 16:11:52.762635: Ended HOLD OUT: FINAL RESULTS: TRAIN = accuracy : 0.7946	precision : 0.8182	recall : 0.7946	f1 : 0.8039	loss : 0.4993		VAL = accuracy : 0.7958	precision : 0.819	recall : 0.7958	f1 : 0.805	loss : 0.4976	
+
+
+
+2024-01-11 16:11:52.762635: Starting the personalization phase!
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2024-01-11 16:20:40.765115: Starting the shutdown...
+Best model: train_accuracy : 0.6802	train_precision : 0.886	train_recall : 0.6802	train_f1 : 0.6983	train_loss : 1.0248		val_accuracy : 0.6801	val_precision : 0.8861	val_recall : 0.6801	val_f1 : 0.6982	val_loss : 1.0247	
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2024-01-11 16:20:40.765115: Shutdown completed

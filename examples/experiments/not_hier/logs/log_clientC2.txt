@@ -1,0 +1,135 @@
+2024-01-11 15:48:29.630148: Local Client Client_C2: Attivato
+Client Metadata :
+Metadata_Client(id='Client_C2', log_path='./examples/experiments/not_hier/logs/log_clientC2.txt', ckpt_best='./examples/experiments/not_hier/ClientC2Ckpt/clientC2_best.pt', ckpt_epoch='./examples/experiments/not_hier/ClientC2Ckpt/clientC2_epoch.pt', metrics={'accuracy': <function accuracy_score at 0x000001FC01E56170>, 'precision': functools.partial(<function precision_score at 0x000001FC01E568C0>, labels=[0, 1], average='weighted', zero_division=0), 'recall': functools.partial(<function recall_score at 0x000001FC01E56950>, labels=[0, 1], average='weighted', zero_division=0), 'f1': functools.partial(<function f1_score at 0x000001FC01E564D0>, labels=[0, 1], average='weighted', zero_division=0)}, n_classes=2, train_path='./examples/datasets/node_2/adult_train_enc.csv', val_path='./examples/datasets/node_2/adult_val_enc.csv', test_path='./examples/datasets/node_2/adult_test_enc.csv')
+Client Training Params :
+HP_Training_Client(build_model_fn=functools.partial(<function create_net at 0x000001FC02DAE200>, input=39, hidden_1=256, hidden_2=256, dropout=0.1, output=2), optimizer_fn=functools.partial(<class 'torch.optim.adam.Adam'>, lr=0.005), loss_fn=functools.partial(<class 'torch.nn.modules.loss.CrossEntropyLoss'>), epochs=3, batch_size=512, patience=10, epoch2ckpt=10, use_weights=True)
+
+2024-01-11 15:48:50.424026: Evaluating global model: TRAIN: accuracy : 0.7391	precision : 0.5463	recall : 0.7391	f1 : 0.6282	loss : 0.664		VL:accuracy : 0.7393	precision : 0.5465	recall : 0.7393	f1 : 0.6285	loss : 0.664	
+2024-01-11 15:48:50.424026: CHECKPOINT: Better Model Found
+
+2024-01-11 15:48:52.748136: Arrivato nuovo modello dal server
+2024-01-11 15:48:55.519652: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 15:49:27.697864: Epoch 1: TRAIN: accuracy : 0.9943	precision : 0.9943	recall : 0.9943	f1 : 0.9943	loss : 0.0593		VL:accuracy : 0.9936	precision : 0.9937	recall : 0.9936	f1 : 0.9936	loss : 0.0207	
+2024-01-11 15:49:27.698865: Epoch 1: CHECKPOINT: Better Model Found
+2024-01-11 15:49:27.700866: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 15:49:58.824121: Epoch 2: TRAIN: accuracy : 0.9941	precision : 0.9941	recall : 0.9941	f1 : 0.9941	loss : 0.0277		VL:accuracy : 0.9933	precision : 0.9934	recall : 0.9933	f1 : 0.9933	loss : 0.0222	
+2024-01-11 15:50:30.683139: Epoch 3: TRAIN: accuracy : 0.9984	precision : 0.9984	recall : 0.9984	f1 : 0.9984	loss : 0.0157		VL:accuracy : 0.9982	precision : 0.9982	recall : 0.9982	f1 : 0.9982	loss : 0.0073	
+2024-01-11 15:50:30.684140: Epoch 3: CHECKPOINT: Better Model Found
+2024-01-11 15:50:30.687142: Ended Training: TRAIN: accuracy : 0.9984	precision : 0.9984	recall : 0.9984	f1 : 0.9984	loss : 0.0157		VL:accuracy : 0.9982	precision : 0.9982	recall : 0.9982	f1 : 0.9982	loss : 0.0073	
+
+2024-01-11 15:51:02.101219: Evaluating global model: TRAIN: accuracy : 0.8631	precision : 0.8828	recall : 0.8631	f1 : 0.845	loss : 0.5941		VL:accuracy : 0.8627	precision : 0.8827	recall : 0.8627	f1 : 0.8444	loss : 0.5939	
+
+2024-01-11 15:51:04.730606: Arrivato nuovo modello dal server
+2024-01-11 15:51:07.665271: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 15:51:40.331925: Epoch 1: TRAIN: accuracy : 0.9958	precision : 0.9958	recall : 0.9958	f1 : 0.9958	loss : 0.0363		VL:accuracy : 0.9955	precision : 0.9956	recall : 0.9955	f1 : 0.9955	loss : 0.0146	
+2024-01-11 15:51:40.333928: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 15:52:13.670191: Epoch 2: TRAIN: accuracy : 0.9988	precision : 0.9988	recall : 0.9988	f1 : 0.9988	loss : 0.0118		VL:accuracy : 0.9985	precision : 0.9985	recall : 0.9985	f1 : 0.9985	loss : 0.0066	
+2024-01-11 15:52:13.672193: Epoch 2: CHECKPOINT: Better Model Found
+2024-01-11 15:52:57.135658: Epoch 3: TRAIN: accuracy : 0.7815	precision : 0.8809	recall : 0.7815	f1 : 0.7948	loss : 0.0103		VL:accuracy : 0.7823	precision : 0.8811	recall : 0.7823	f1 : 0.7956	loss : 0.7094	
+2024-01-11 15:52:57.158679: Ended Training: TRAIN: accuracy : 0.9988	precision : 0.9988	recall : 0.9988	f1 : 0.9988	loss : 0.0118		VL:accuracy : 0.9985	precision : 0.9985	recall : 0.9985	f1 : 0.9985	loss : 0.0066	
+
+2024-01-11 15:53:28.670792: Evaluating global model: TRAIN: accuracy : 0.8103	precision : 0.8273	recall : 0.8103	f1 : 0.8159	loss : 0.436		VL:accuracy : 0.8109	precision : 0.8274	recall : 0.8109	f1 : 0.8164	loss : 0.4369	
+
+2024-01-11 15:53:30.942855: Arrivato nuovo modello dal server
+2024-01-11 15:53:33.557229: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 15:54:06.496130: Epoch 1: TRAIN: accuracy : 0.9976	precision : 0.9976	recall : 0.9976	f1 : 0.9976	loss : 0.0281		VL:accuracy : 0.9975	precision : 0.9975	recall : 0.9975	f1 : 0.9975	loss : 0.0114	
+2024-01-11 15:54:06.498132: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 15:54:38.390591: Epoch 2: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+2024-01-11 15:54:38.392593: Epoch 2: CHECKPOINT: Better Model Found
+2024-01-11 15:55:09.995282: Epoch 3: TRAIN: accuracy : 0.9949	precision : 0.9949	recall : 0.9949	f1 : 0.9949	loss : 0.0181		VL:accuracy : 0.9943	precision : 0.9943	recall : 0.9943	f1 : 0.9943	loss : 0.0217	
+2024-01-11 15:55:10.005291: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 15:55:41.458352: Evaluating global model: TRAIN: accuracy : 0.8333	precision : 0.864	recall : 0.8333	f1 : 0.8026	loss : 0.4495		VL:accuracy : 0.8334	precision : 0.8641	recall : 0.8334	f1 : 0.8028	loss : 0.4511	
+
+2024-01-11 15:55:43.837511: Arrivato nuovo modello dal server
+2024-01-11 15:55:46.655069: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 15:56:19.152610: Epoch 1: TRAIN: accuracy : 0.9963	precision : 0.9963	recall : 0.9963	f1 : 0.9963	loss : 0.041		VL:accuracy : 0.9958	precision : 0.9958	recall : 0.9958	f1 : 0.9958	loss : 0.0147	
+2024-01-11 15:56:19.153611: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 15:56:51.689674: Epoch 2: TRAIN: accuracy : 0.9976	precision : 0.9976	recall : 0.9976	f1 : 0.9976	loss : 0.0381		VL:accuracy : 0.9975	precision : 0.9975	recall : 0.9975	f1 : 0.9975	loss : 0.0125	
+2024-01-11 15:57:24.284295: Epoch 3: TRAIN: accuracy : 0.9979	precision : 0.9979	recall : 0.9979	f1 : 0.9979	loss : 0.0136		VL:accuracy : 0.9977	precision : 0.9977	recall : 0.9977	f1 : 0.9977	loss : 0.0105	
+2024-01-11 15:57:24.286298: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 15:57:55.621755: Evaluating global model: TRAIN: accuracy : 0.8333	precision : 0.864	recall : 0.8333	f1 : 0.8026	loss : 0.4495		VL:accuracy : 0.8334	precision : 0.8641	recall : 0.8334	f1 : 0.8028	loss : 0.4512	
+
+2024-01-11 15:57:58.019932: Arrivato nuovo modello dal server
+2024-01-11 15:58:00.655325: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 15:58:33.680344: Epoch 1: TRAIN: accuracy : 0.9982	precision : 0.9982	recall : 0.9982	f1 : 0.9982	loss : 0.0298		VL:accuracy : 0.9979	precision : 0.9979	recall : 0.9979	f1 : 0.9979	loss : 0.0086	
+2024-01-11 15:58:33.682346: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 15:59:05.865070: Epoch 2: TRAIN: accuracy : 0.9988	precision : 0.9988	recall : 0.9988	f1 : 0.9988	loss : 0.008		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0068	
+2024-01-11 15:59:37.829597: Epoch 3: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0081		VL:accuracy : 0.9985	precision : 0.9985	recall : 0.9985	f1 : 0.9985	loss : 0.0058	
+2024-01-11 15:59:37.835603: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 16:00:09.361743: Evaluating global model: TRAIN: accuracy : 0.8333	precision : 0.864	recall : 0.8333	f1 : 0.8026	loss : 0.4495		VL:accuracy : 0.8334	precision : 0.8641	recall : 0.8334	f1 : 0.8028	loss : 0.4516	
+
+2024-01-11 16:00:13.132165: Arrivato nuovo modello dal server
+2024-01-11 16:00:15.772562: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 16:00:47.841675: Epoch 1: TRAIN: accuracy : 0.786	precision : 0.8822	recall : 0.786	f1 : 0.799	loss : 0.0231		VL:accuracy : 0.7839	precision : 0.8815	recall : 0.7839	f1 : 0.7971	loss : 0.765	
+2024-01-11 16:00:47.843677: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 16:01:19.881266: Epoch 2: TRAIN: accuracy : 0.9948	precision : 0.9948	recall : 0.9948	f1 : 0.9948	loss : 0.0513		VL:accuracy : 0.9942	precision : 0.9942	recall : 0.9942	f1 : 0.9942	loss : 0.0229	
+2024-01-11 16:01:51.866314: Epoch 3: TRAIN: accuracy : 0.9953	precision : 0.9953	recall : 0.9953	f1 : 0.9953	loss : 0.0249		VL:accuracy : 0.9948	precision : 0.9948	recall : 0.9948	f1 : 0.9948	loss : 0.0201	
+2024-01-11 16:01:51.892337: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 16:02:23.810312: Evaluating global model: TRAIN: accuracy : 0.7902	precision : 0.8366	recall : 0.7902	f1 : 0.7327	loss : 0.6706		VL:accuracy : 0.7914	precision : 0.8373	recall : 0.7914	f1 : 0.7347	loss : 0.6725	
+
+2024-01-11 16:02:25.997298: Arrivato nuovo modello dal server
+2024-01-11 16:02:28.685738: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 16:03:01.015087: Epoch 1: TRAIN: accuracy : 0.9923	precision : 0.9924	recall : 0.9923	f1 : 0.9923	loss : 0.0505		VL:accuracy : 0.9917	precision : 0.9918	recall : 0.9917	f1 : 0.9917	loss : 0.0365	
+2024-01-11 16:03:01.016088: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 16:03:32.884552: Epoch 2: TRAIN: accuracy : 0.9958	precision : 0.9958	recall : 0.9958	f1 : 0.9958	loss : 0.0227		VL:accuracy : 0.9953	precision : 0.9953	recall : 0.9953	f1 : 0.9953	loss : 0.0176	
+2024-01-11 16:04:04.702436: Epoch 3: TRAIN: accuracy : 0.9962	precision : 0.9962	recall : 0.9962	f1 : 0.9962	loss : 0.02		VL:accuracy : 0.9957	precision : 0.9957	recall : 0.9957	f1 : 0.9957	loss : 0.0136	
+2024-01-11 16:04:04.714447: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 16:04:36.847123: Evaluating global model: TRAIN: accuracy : 0.7902	precision : 0.8366	recall : 0.7902	f1 : 0.7327	loss : 0.6705		VL:accuracy : 0.7914	precision : 0.8373	recall : 0.7914	f1 : 0.7347	loss : 0.6731	
+
+2024-01-11 16:04:39.080150: Arrivato nuovo modello dal server
+2024-01-11 16:04:41.787608: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 16:05:14.439263: Epoch 1: TRAIN: accuracy : 0.9947	precision : 0.9948	recall : 0.9947	f1 : 0.9947	loss : 0.0408		VL:accuracy : 0.9939	precision : 0.9939	recall : 0.9939	f1 : 0.9939	loss : 0.0307	
+2024-01-11 16:05:14.441264: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 16:05:46.551020: Epoch 2: TRAIN: accuracy : 0.9893	precision : 0.9897	recall : 0.9893	f1 : 0.9894	loss : 0.0239		VL:accuracy : 0.9889	precision : 0.9892	recall : 0.9889	f1 : 0.9889	loss : 0.0437	
+2024-01-11 16:06:19.102211: Epoch 3: TRAIN: accuracy : 0.9977	precision : 0.9977	recall : 0.9977	f1 : 0.9977	loss : 0.0181		VL:accuracy : 0.9975	precision : 0.9975	recall : 0.9975	f1 : 0.9975	loss : 0.0094	
+2024-01-11 16:06:19.122229: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 16:06:51.338002: Evaluating global model: TRAIN: accuracy : 0.7902	precision : 0.8366	recall : 0.7902	f1 : 0.7327	loss : 0.6706		VL:accuracy : 0.7914	precision : 0.8373	recall : 0.7914	f1 : 0.7347	loss : 0.6732	
+
+2024-01-11 16:06:53.324806: Arrivato nuovo modello dal server
+2024-01-11 16:06:56.477668: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 16:07:30.917439: Epoch 1: TRAIN: accuracy : 0.9969	precision : 0.9969	recall : 0.9969	f1 : 0.9969	loss : 0.0351		VL:accuracy : 0.9963	precision : 0.9963	recall : 0.9963	f1 : 0.9963	loss : 0.0106	
+2024-01-11 16:07:30.918439: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 16:08:05.854189: Epoch 2: TRAIN: accuracy : 0.9985	precision : 0.9985	recall : 0.9985	f1 : 0.9985	loss : 0.0139		VL:accuracy : 0.9983	precision : 0.9983	recall : 0.9983	f1 : 0.9983	loss : 0.0079	
+2024-01-11 16:08:40.387538: Epoch 3: TRAIN: accuracy : 0.9965	precision : 0.9966	recall : 0.9965	f1 : 0.9966	loss : 0.0164		VL:accuracy : 0.9961	precision : 0.9962	recall : 0.9961	f1 : 0.9961	loss : 0.0145	
+2024-01-11 16:08:40.389540: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 16:09:14.048111: Evaluating global model: TRAIN: accuracy : 0.874	precision : 0.8912	recall : 0.874	f1 : 0.8592	loss : 0.5198		VL:accuracy : 0.8736	precision : 0.891	recall : 0.8736	f1 : 0.8587	loss : 0.522	
+
+2024-01-11 16:09:16.391238: Arrivato nuovo modello dal server
+2024-01-11 16:09:19.270413: Dimensione del Training set: 348948 Dimensione del Validation set: 87238
+2024-01-11 16:10:13.383846: Epoch 1: TRAIN: accuracy : 0.996	precision : 0.996	recall : 0.996	f1 : 0.996	loss : 0.044		VL:accuracy : 0.9957	precision : 0.9957	recall : 0.9957	f1 : 0.9957	loss : 0.016	
+2024-01-11 16:10:13.385847: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 16:10:46.884830: Epoch 2: TRAIN: accuracy : 0.9984	precision : 0.9984	recall : 0.9984	f1 : 0.9984	loss : 0.012		VL:accuracy : 0.9982	precision : 0.9982	recall : 0.9982	f1 : 0.9982	loss : 0.0082	
+2024-01-11 16:11:19.092068: Epoch 3: TRAIN: accuracy : 0.9846	precision : 0.9852	recall : 0.9846	f1 : 0.9847	loss : 0.0303		VL:accuracy : 0.9843	precision : 0.9849	recall : 0.9843	f1 : 0.9844	loss : 0.0399	
+2024-01-11 16:11:19.094070: Ended Training: TRAIN: accuracy : 0.9987	precision : 0.9987	recall : 0.9987	f1 : 0.9987	loss : 0.0097		VL:accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0072	
+
+2024-01-11 16:11:50.451537: Evaluating global model: TRAIN: accuracy : 0.874	precision : 0.8912	recall : 0.874	f1 : 0.8592	loss : 0.5199		VL:accuracy : 0.8736	precision : 0.891	recall : 0.8736	f1 : 0.8587	loss : 0.5223	
+
+
+2024-01-11 16:11:52.771643: Personalizzo il miglior modello!
+2024-01-11 16:12:34.385942: Epoch 1: TRAIN: accuracy : 0.9946	precision : 0.9947	recall : 0.9946	f1 : 0.9946	loss : 0.0183		VL:accuracy : 0.9943	precision : 0.9944	recall : 0.9943	f1 : 0.9943	loss : 0.0257	
+2024-01-11 16:12:34.387945: Epoch 1: CHECKPOINT: Passed 10 epochs
+2024-01-11 16:13:13.811848: Epoch 2: TRAIN: accuracy : 0.9986	precision : 0.9986	recall : 0.9986	f1 : 0.9986	loss : 0.0114		VL:accuracy : 0.9985	precision : 0.9985	recall : 0.9985	f1 : 0.9985	loss : 0.0069	
+2024-01-11 16:14:00.213489: Epoch 3: TRAIN: accuracy : 0.9988	precision : 0.9988	recall : 0.9988	f1 : 0.9988	loss : 0.0129		VL:accuracy : 0.9985	precision : 0.9985	recall : 0.9985	f1 : 0.9985	loss : 0.0051	
+2024-01-11 16:14:49.871569: Epoch 4: TRAIN: accuracy : 0.9959	precision : 0.9959	recall : 0.9959	f1 : 0.9959	loss : 0.0097		VL:accuracy : 0.9958	precision : 0.9959	recall : 0.9958	f1 : 0.9958	loss : 0.0159	
+2024-01-11 16:15:38.580790: Epoch 5: TRAIN: accuracy : 0.999	precision : 0.999	recall : 0.999	f1 : 0.999	loss : 0.0088		VL:accuracy : 0.9989	precision : 0.9989	recall : 0.9989	f1 : 0.9989	loss : 0.0044	
+2024-01-11 16:15:38.582791: Epoch 5: CHECKPOINT: Better Model Found
+2024-01-11 16:16:27.456159: Epoch 6: TRAIN: accuracy : 0.999	precision : 0.999	recall : 0.999	f1 : 0.999	loss : 0.0095		VL:accuracy : 0.9988	precision : 0.9988	recall : 0.9988	f1 : 0.9988	loss : 0.0052	
+2024-01-11 16:17:17.792855: Epoch 7: TRAIN: accuracy : 0.9941	precision : 0.9941	recall : 0.9941	f1 : 0.994	loss : 0.0083		VL:accuracy : 0.9936	precision : 0.9937	recall : 0.9936	f1 : 0.9936	loss : 0.0173	
+2024-01-11 16:18:07.033557: Epoch 8: TRAIN: accuracy : 0.9926	precision : 0.9928	recall : 0.9926	f1 : 0.9927	loss : 0.0069		VL:accuracy : 0.9926	precision : 0.9928	recall : 0.9926	f1 : 0.9926	loss : 0.0252	
+2024-01-11 16:18:56.386359: Epoch 9: TRAIN: accuracy : 0.9973	precision : 0.9973	recall : 0.9973	f1 : 0.9973	loss : 0.0067		VL:accuracy : 0.9973	precision : 0.9973	recall : 0.9973	f1 : 0.9973	loss : 0.0128	
+2024-01-11 16:19:45.438890: Epoch 10: TRAIN: accuracy : 0.9978	precision : 0.9979	recall : 0.9978	f1 : 0.9978	loss : 0.0067		VL:accuracy : 0.9976	precision : 0.9977	recall : 0.9976	f1 : 0.9976	loss : 0.0084	
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2024-01-11 16:20:40.761112: Starting the shutdown...
+Best model: Training train_loss : 0.0088	train_accuracy : 0.999	train_precision : 0.999	train_recall : 0.999	train_f1 : 0.999		VL:val_loss : 0.0044	val_accuracy : 0.9989	val_precision : 0.9989	val_recall : 0.9989	val_f1 : 0.9989	
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2024-01-11 16:20:40.761112: Shutdown completed
